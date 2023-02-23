@@ -1,0 +1,7 @@
+<h2>NODE</h2>
+
+Para abrir node se escribe node en la terminal y se abre una
+interfaz de js en lugar de abrirla en el navegador
+
+NPM se instala junto con node :)
+
