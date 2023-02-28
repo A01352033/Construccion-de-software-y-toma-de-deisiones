@@ -7,7 +7,7 @@ app.use((request, response, next) => {
     next();
 });
 
-app.use((request, response, next) => {
+app.use("/home",(request, response, next) => {
     console.log("Otro middleware!");
 
     response.send("Hola mundo!");
