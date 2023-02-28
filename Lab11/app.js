@@ -13,4 +13,4 @@ app.use("/home",(request, response, next) => {
     response.send("Hola mundo!");
 });
 
-app.lisen(3000);
+app.listen(3000);
