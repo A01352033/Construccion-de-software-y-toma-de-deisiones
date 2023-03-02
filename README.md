@@ -18,3 +18,5 @@ Respuestas arriba de 500 errores inernos<br>
 <br>
 Repositorio del Profe: <br>
 https://bitbucket.org/ejuarez/hot_cakes/src/main/
+
+git clone https://bitbucket.org/ejuarez/hot_cakes.git
