@@ -50,41 +50,55 @@ function contador(arr) {
 };
 let arr = [7, 23, -6, 0, 3, 0];
 let tot = contador(arr);
-document.write( "<br><br>" +
+document.getElementById("contador").innerHTML = "<br><br>" +
 "Arreglo de numeros: " + arr + "<br>" +
 "La cantidad de numeros negativos es: " + tot[0] + "<br>" +
 "La cantidad de numeros cero es: " + tot[2] + "<br>" +
-"La cantidad de numeros positivos es: " + tot[4] + "<br>");
+"La cantidad de numeros positivos es: " + tot[4] + "<br>";
 
 
 
 function promedio(arrNum) {
+    let promedio1 = 0;
+    let promedio2 = 0;
+    let promedio3 = 0;
+    let sum = 0;
+    let average = 0;
     for (let i = 0; i < arrNum.length; i++) {
         for (let j = 0; j < arrNum[i].length; j++) {
-            row += arrNum[i][j];
+            sum += arrNum[i][j];
         };
+        average = sum / arrNum[i].length;
+        sum = 0;
         if(i == 0) {
-            promedio1 = row/arrNum[i][j].length
+            promedio1 = average;
         };
         if(i == 1) {
-            promedio2 = row/arrNum[i][j].length
+            promedio2 = average;
         };
         if(i == 2) {
-            promedio3 = row/arrNum[i][j].length
+            promedio3 = average;
         };
     };
     return promedio1 + " " + promedio2 + " " + promedio3;
 };
 
-let list = [[1, 2, 3], [5, 6, 7], [9, 10, 11]];
-let prom = promedio(list);
-document.write( "<br><br>" +
-"Matriz utilizada: " + list + "<br>" +
+let arrNum = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+let prom = promedio(arrNum);
+document.getElementById("promedio").innerHTML ="<br><br>" +
+"Matriz utilizada: " + arrNum + "<br>" +
 "Promedio de la primer fila: " + prom[0] + "<br>" +
 "Promedio de la segunda fila: " + prom[2] + "<br>" +
-"Promedio de la tercera fila: " + prom[4] + "<br>");
+"Promedio de la tercera fila: " + prom[4] + "<br>";
 
 
-function inverso(num) { 
+function inverso(numero) { 
+    let num = numero.toString().split("").reverse().join("");
+    return Number(num);
+};
 
-}
+let num = 123456789;
+let reversa = inverso(num);
+document.getElementById("invertir").innerHTML = "<br><br>" +
+    "Numero Seleccionado: " + num + "<br>" +
+    "El numero invertido es: " + reversa + "<br>";
