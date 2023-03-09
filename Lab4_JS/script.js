@@ -102,3 +102,30 @@ let reversa = inverso(num);
 document.getElementById("invertir").innerHTML = "<br><br>" +
     "Numero Seleccionado: " + num + "<br>" +
     "El numero invertido es: " + reversa + "<br>";
+
+class Cuenta {
+    private String titular;
+    private double cantidad;
+    Cuenta (titular, cantidad) {
+        this.titular = titular;
+        this.cantidad = cantidad;
+    };
+    Cuenta(titular) {
+        this.titular = titular;
+    };
+    getTitular(){
+        return titular
+    };
+    setTitular(titular){
+        void titular;
+    };
+    toString() {
+
+    };
+    ingresar(cantidad) {
+
+    };
+    retirar(cantidad) {
+
+    };
+}
