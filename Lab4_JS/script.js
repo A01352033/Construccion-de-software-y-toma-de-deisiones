@@ -103,29 +103,30 @@ document.getElementById("invertir").innerHTML = "<br><br>" +
     "Numero Seleccionado: " + num + "<br>" +
     "El numero invertido es: " + reversa + "<br>";
 
-class Cuenta {
-    private String titular;
-    private double cantidad;
-    Cuenta (titular, cantidad) {
-        this.titular = titular;
-        this.cantidad = cantidad;
+class Rectangulo {
+    constructor(alto, ancho) {
+        this.alto = alto;
+        this.ancho = ancho;
     };
-    Cuenta(titular) {
-        this.titular = titular;
+    // Getter
+    get area() {
+        return this.calcArea();
     };
-    getTitular(){
-        return titular
+    get perimetro() {
+        return this.calcPer();
     };
-    setTitular(titular){
-        void titular;
-    };
-    toString() {
 
+    // Método
+    calcArea () {
+        return this.alto * this.ancho;
     };
-    ingresar(cantidad) {
+    calcPer() {
+        return this.alto*2 + this.ancho*2;
+    };
+};
 
-    };
-    retirar(cantidad) {
-
-    };
-}
+document.getElementById("trapecio").innerHTML = "<br><br>" +
+    "trapecio: <br>" +
+    "alto: 7<br>" + "ancho: 2<br>"  +
+    "El area del Rectangulo es: " + new Rectangulo(7,2).calcArea() + "<br>" +
+    "El perimetro del Rectangulo es: " + new Rectangulo(7,2).calcPer() + "<br>";

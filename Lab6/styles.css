@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="password"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#password-message {
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+}
