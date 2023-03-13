@@ -26,3 +26,9 @@ function validatePassword() {
 
 confirmPassword.addEventListener('input', validatePassword);
 password.addEventListener('input', validatePassword);
+
+function cambiarColor() {
+	var colores = ["red", "green", "blue", "orange", "purple", "pink"];
+	var color = colores[Math.floor(Math.random() * colores.length)];
+	document.getElementById("color").style.color = color;
+}
