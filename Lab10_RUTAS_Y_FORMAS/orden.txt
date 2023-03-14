@@ -1,4 +1,0 @@
-Tacos de bisteck: Bisteck 
-Tacos de pastor: Pastor Tacos de chorizo: Chorizo 
-Tacos de asada: Asada Nombre: 500  
-Direccion: Manuel+Villalpando
