@@ -104,10 +104,10 @@ router.post('/ordenar', (request, response, next) => {
                             <p>Gracias por su compra</p>
                         </div>
                     </main>
-                    <a href="/">
+                    <a href="/Lab11">
                     <button>Menú</button>
                     </a>
-                    <a href="/ordenar">
+                    <a href="/Lab11/ordenar">
                     <button>Pedir de nuevo</button>
                     </a>
             
