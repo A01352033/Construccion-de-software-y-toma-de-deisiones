@@ -86,7 +86,7 @@ router.get('/', (request, response, next) => {
 <button onclick="window.location.href = 'https://www.facebook.com/Tacos-El-Carnal-100000000000000';">Facebook</button>
 <br>
 <br>
-<a href="/Lab11/ordenar">
+<a href="/din/ordenar">
 <button>Pedir</button>
 </a>
     </body>

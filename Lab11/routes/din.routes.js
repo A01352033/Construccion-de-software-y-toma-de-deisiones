@@ -57,7 +57,7 @@ router.get('/ordenar', (request, response, next) => {
                     <br><br>
                 </form>
             </section>
-            <a href="/">
+            <a href="/Lab11">
             <button>Back</button>
             </a>
         
@@ -92,9 +92,9 @@ router.post('/ordenar', (request, response, next) => {
             
                     <nav>
                         <div>
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/preguntas">Preguntas</a></li>
-                            <li><a href="/ordenar">Ordenar</a></li>
+                            <li><a href="/Lab11">Inicio</a></li>
+                            <li><a href="/Lab11/preguntas">Preguntas</a></li>
+                            <li><a href="/din/ordenar">Ordenar</a></li>
                         </div>
                         <div id="orden"></div>
                     </nav>
@@ -107,7 +107,7 @@ router.post('/ordenar', (request, response, next) => {
                     <a href="/Lab11">
                     <button>Menú</button>
                     </a>
-                    <a href="/Lab11/ordenar">
+                    <a href="/din/ordenar">
                     <button>Pedir de nuevo</button>
                     </a>
             
