@@ -15,7 +15,7 @@ router.get('/ordenar', (request, response, next) => {
                 <h2>Pedidos </h2>
                 
                 <h3>Haz tu pedido aqui...</h3>
-                <form action="/ordenar" method="POST">
+                <form action="/Lab11/ordenar" method="POST">
                     <p>De qué taquería quieres?</p>
                     <select>
                         <option value="Norte">Norte</option>
