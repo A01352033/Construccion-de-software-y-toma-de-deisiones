@@ -9,34 +9,42 @@
 </head>
 
 <body>
-    <header>
+    <%- include('add/style.ejs') %>
+
+    <header style="margin-top: 5%;">
         <h1>Tacos EL CARNAL...</h1>
         <h2> Desde 2022</h2>
+        <img src="Tacos EL CARNAL.png" alt="Logo TACOS EL CARNAL">
     </header>
-    <img src="Tacos EL CARNAL.png" alt="Logo TACOS EL CARNAL">
+    
+<section>
+    
+        <nav>
+            <div id="orden"></div>
+        </nav>
+        <main>
+            <div>
+                <span><%= titulo %></span>
+                <ul>
+                <li><strong>Bisteck: </strong><%= bisteck %></li>
+                <li><strong>Pastor: </strong><%= pastor %></li>
+                <li><strong>Chorizo: </strong><%= chorizo %></li>
+                <li><strong>Asada: </strong><%= asada %></li>
+                <li><strong>Carnitas: </strong><%= carnitas %></li>
+                <li><strong>Nombre: </strong><%= nombre %></li>
+                <li><strong>Direccion: </strong><%= direccion %></li>
+                </ul>
+            </div>
+        </main>
 
-    <nav>
-        <div id="orden"></div>
-    </nav>
-    <main>
-        <div>
-            <span><%= titulo %></span>
-            <ul>
-            <li><strong>Bisteck: </strong><%= bisteck %></li>
-            <li><strong>Pastor: </strong><%= pastor %></li>
-            <li><strong>Chorizo: </strong><%= chorizo %></li>
-            <li><strong>Asada: </strong><%= asada %></li>
-            <li><strong>Nombre: </strong><%= nombre %></li>
-            <li><strong>Direccion: </strong><%= direccion %></li>
-            </ul>
-        </div>
-    </main>
     <a href="/Lab12">
-        <button>Menú</button>
+        <button class="button">Menú</button>
     </a>
+    <br>
     <a href="/Lab12/ordenar">
-        <button>Pedir de nuevo</button>
+        <button class="button">Pedir de nuevo</button>
     </a>
+</section>
 
 </body>
 

@@ -31,6 +31,7 @@ router.post('/ordenar', (request, response, next) => {
         pastor: request.body.PastorNumber,
         chorizo: request.body.ChorizoNumber,
         asada:request.body.AsadaNumber,
+        carnitas: request.body.CarnitasNumber,
         nombre: request.body.Nombre,
         direccion: request.body.Direccion,
     });

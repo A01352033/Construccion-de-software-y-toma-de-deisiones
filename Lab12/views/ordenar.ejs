@@ -9,9 +9,12 @@
 </head>
 
 <body>
+    <%- include('add/style.ejs') %>
+
     <h2>Pedidos </h2>
 
     <h3>Haz tu pedido aqui...</h3>
+<section>
     <form action="/Lab12/ordenar" method="POST">
         <p>De qué taquería quieres?</p>
         <select>
@@ -49,6 +52,13 @@
         <div id="input">
             <input type="number" id="AsadaNumber" name="AsadaNumber" placeholder="Cuantos?" min="0"><br>
         </div>
+        <br>
+
+        <input type="checkbox" id="Carnitas" name="Carnitas" value="Carnitas" onchange="mostrarInput()">
+            <label for="Carnitas">Carnitas</label>
+        <div id="input">
+            <input type="number" id="CarnitasNumber" name="CarnitasNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
 
         <br><br>
 
@@ -62,13 +72,13 @@
 
         <br><br>
 
-        <button type="submit" name="action">Enviar pedido</button>
+        <button type="submit" name="action" class="button">Enviar pedido</button>
 
         <br><br>
     </form>
     </section>
     <a href="/Lab12">
-        <button>Back</button>
+        <button class="button">Back</button>
     </a>
 <script>
 function mostrarInput() {
