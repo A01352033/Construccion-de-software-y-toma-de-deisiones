@@ -40,5 +40,6 @@ exports.get_pedido = (request, response, next) => {
     response.render('pedido', {
         titulo: 'pedido',
         ordenes: orden.fetchAll(),
+        orden: orden.fetchAll()[orden.fetchAll().length - 1],
     });
 };
