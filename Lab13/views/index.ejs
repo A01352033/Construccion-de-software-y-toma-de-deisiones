@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 13</title>
+</head>
+
+<body>
+    <%- include('add/style.ejs') %>
+
+    <header>
+        <h1>Tacos EL KRNAL... </h1>
+        <h2> Desde 2022 </h2>
+        <h3>By namu </h3>
+    </header>
+    
+    <section>
+        <img src="Lab12\public\assets\KRNAL.png" alt="Logo TACOS EL CARNAL">
+        <h3>Menú </h3>
+
+        <h3>Tacos grandes </h3>
+        <p>Todos incluyen nopales y cebollas asadas</p>
+        <ul>
+            <li class="item"> Bisteck ........................ $30</li>
+            <li class="item"> Pastor ........................ $30</li>
+            <li class="item"> Chorizo ........................ $30</li>
+            <li class="item"> Asada ........................ $30</li>
+            <li class="item"> CARNITAS ........................ $30</li>
+        </ul>
+
+        <h3>Tacos pequeños </h3>
+        <p>Todos incluyen verdura</p>
+        <ul>
+            <li class="item"> Bisteck ........................ $15</li>
+            <li class="item"> Pastor ........................ $15</li>
+            <li class="item"> Chorizo ........................ $15</li>
+            <li class="item"> Asada ........................ $15</li>
+            <li class="item"> CARNITAS ........................ $15</li>
+        </ul>
+
+        <h3>ESPECIALES </h3>
+        <p>Hazlo combo y agrega refresco por $10 más...</p>
+        <dl>
+            <dt class="item"> <b>El Labrador.................. $50</b></dt>
+            <dd> Mucha cebolla caramelizada, bisteck y papa asada </dd>
+            <dt class="item"> <b> Pastor alemán............ $50</b></dt>
+            <dd> Pastor con chorizo, piña y chile guero asado </dd>
+            <dt class="item"> <b>El Pug................................. $50</b></dt>
+            <dd> Carnitas, chorizo, cebolla caramelizada y morron </dd>
+            <dt class="item"> <b>Perron................................ $50</b></dt>
+            <dd> Asada, chorizo, extra queso, chile guero, papa y nopales  </dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Ubicación </h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacióm</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                <td>L - D (24 hrs)</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                <td>L - V (8 am - 11 pm)</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                <td>L - D (24 hrs)</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <button
+            onclick="window.location.href = 'https://www.facebook.com/Tacos-El-Carnal-100000000000000';" class="fb">Facebook</button>
+        <br>
+        <br>
+        <a href="/Lab13/ordenar">
+            <button class="button">Pedir</button>
+        </a>
+</body>
+
+</html>
