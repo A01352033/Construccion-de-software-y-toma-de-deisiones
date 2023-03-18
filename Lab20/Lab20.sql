@@ -1,3 +1,5 @@
+/* Manuel Villalpando y Dante Péres */
+
 -- Materiales(Clave, Descripción, Costo)
 -- Proveedores(RFC, RazonSocial)
 -- Proyectos(Numero,Denominacion)
