@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+
+<body>
+<%- include('add/style.ejs') %>
+
+    <h1>
+        <%= titulo %>
+    </h1>
+
+    <div class="container">
+        <form action="/lab17/login" method="POST">
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" name="username">
+                <label for="first_name">Username</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="password" type="password" class="validate" name="password">
+                <label for="last_name">Password</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
