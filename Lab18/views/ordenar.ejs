@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CARNAL</title>
+</head>
+
+<body>
+    <%- include('add/style.ejs') %>
+
+    <h2>Pedidos </h2>
+
+    <h3>Haz tu pedido aqui...</h3>
+<section>
+    <form action="/Lab18/ordenar" method="POST">
+        <p>De qué taquería quieres?</p>
+        <select>
+            <option value="Norte" for="Sucursal">Norte</option>
+            <option value="Centro" for="Sucursal">Centro</option>
+            <option value="Sur" for="Sucursal">Sur</option>
+        </select>
+        <br>
+        <br>
+
+        <p>De qué tacos quieres?</p>
+        <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck" onchange="mostrarInput()">
+            <label for="Bisteck">Bisteck</label>
+        <div id="input">
+            <input type="number" id="BisteckNumber" name="BisteckNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
+        <br>
+
+        <input type="checkbox" id="Pastor" name="Pastor" value="Pastor" onchange="mostrarInput()">
+            <label for="Pastor">Pastor</label>
+        <div id="input">
+            <input type="number" id="PastorNumber" name="PastorNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
+        <br>
+
+        <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo" onchange="mostrarInput()">
+            <label for="Chorizo">Chorizo</label>
+        <div id="input">
+            <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
+        <br>
+
+        <input type="checkbox" id="Asada" name="Asada" value="Asada" onchange="mostrarInput()">
+            <label for="Asada">Asada</label>
+        <div id="input">
+            <input type="number" id="AsadaNumber" name="AsadaNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
+        <br>
+
+        <input type="checkbox" id="Carnitas" name="Carnitas" value="Carnitas" onchange="mostrarInput()">
+            <label for="Carnitas">Carnitas</label>
+        <div id="input">
+            <input type="number" id="CarnitasNumber" name="CarnitasNumber" placeholder="Cuantos?" min="0"><br>
+        </div>
+
+        <br><br>
+
+        <label for="Nombre">Nombre: </label><br>
+        <input type="text" id="Nombre" name="Nombre">
+
+        <br><br>
+
+        <label for="Direccion">Dirección: </label><br>
+        <input type="text" id="Direccion" name="Direccion">
+
+        <br><br>
+
+        <button type="submit" name="action" class="button">Enviar pedido</button>
+
+        <br><br>
+    </form>
+    </section>
+    <a href="/Lab18">
+        <button class="button">Back</button>
+    </a>
+<script>
+function mostrarInput() {
+    var inputContainer = document.getElementById("input");
+    var checkbox = document.getElementById("checkbox");
+    if (checkbox.checked) {
+      inputContainer.style.display = "block";
+    } else {
+      inputContainer.style.display = "none";
+    }
+  }
+  </script>
+</body>
+
+</html>
