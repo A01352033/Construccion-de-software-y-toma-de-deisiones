@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+
+<body>
+<%- include('add/style.ejs') %>
+
+    <h1>
+        <%= titulo %>
+    </h1>
+
+    <div class="container">
+        <form action="/lab18/login" method="POST">
+            <div>
+                <input id="user" type="text" class="validate" name="username">
+                <label for="user">Usuario</label>
+            </div>
+            <div>
+                <input id="password" type="password" class="validate" name="password">
+                <label for="password">Contraseña</label>
+            </div>
+            <button type="submit" name="action">Login
+                <i>send</i>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 13</title>
-</head>
-
-<body>
-<%- include('add/style.ejs') %>
+<%- include('add/header.ejs') %>
 
     <h1>
         <%= titulo %>
     </h1>
 
     <div class="container">
-        <form action="/lab14/login" method="POST">
+        <form action="/tacos/login" method="POST">
             <div class="input-field col s6">
                 <input id="first_name" type="text" class="validate" name="username">
                 <label for="first_name">Username</label>
@@ -30,6 +19,6 @@
             </button>
         </form>
     </div>
-</body>
 
-</html>
+
+    <%- include('add/footer.ejs') %>

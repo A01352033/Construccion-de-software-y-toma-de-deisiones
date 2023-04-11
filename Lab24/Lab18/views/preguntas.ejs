@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+
+<body>
+
+    <%- include('add/style.ejs') %>
+
+    <h1>
+        <%= titulo %>
+    </h1>
+
+    <ul>
+        <li>¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?</li>
+            <p>El escribir sql unicamente en la capa del modelo tiene como ventaja la separacion de responsabilidades,
+                La abstraccion de datos, reutilización de codigo más sencilla y la más importante, seguridad ante un ataque
+                sencillo de sql injection, además de que permite escalabilidad dentro de la aplicacion </p>
+        <li>¿Qué es SQL injection y cómo se puede prevenir?</li>
+            <p>Es una manera de meter codigo de sql dentro de las paginas para vulnerarlas
+            y se puede prevenir con el uso de prepared statements</p>
+    </ul>
+
+    <a href="/Lab18">
+        <button class="button">Menú</button>
+    </a>
+</body>
+
+</html>

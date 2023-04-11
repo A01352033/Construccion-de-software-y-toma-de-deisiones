@@ -16,7 +16,7 @@ exports.post_login = (request, response, next) => {
     });
     user_nuevo.save();
     request.session.user = user_nuevo.username;
-    response.status(300).redirect('/lab14/');
+    response.status(300).redirect('/tacos/');
 };
 
 exports.get_index = (request, response, next) => {
@@ -27,7 +27,7 @@ exports.get_index = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab14/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -39,7 +39,7 @@ exports.get_index = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab14/login');
+        response.redirect('/tacos/login');
     }
 }; */
 
@@ -51,7 +51,7 @@ exports.get_ordenar = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab14/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -70,7 +70,7 @@ exports.post_ordenar = (request, response, next) => {
         direccion: request.body.Direccion,
     });
     norden.save();
-    response.status(300).redirect('/Lab14/pedido');
+    response.status(300).redirect('/tacos/pedido');
 };
 
 exports.get_pedido = (request, response, next) => {
@@ -88,6 +88,6 @@ exports.get_pedido = (request, response, next) => {
         user: request.session.user || '',
     });
     } else {
-        response.redirect('/lab14/login');
+        response.redirect('/tacos/login');
     }
 };

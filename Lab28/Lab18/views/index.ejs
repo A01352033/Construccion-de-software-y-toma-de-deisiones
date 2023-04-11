@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+
+<body>
+    <%- include('add/style.ejs') %>
+
+    <header>
+        <h1>Tacos EL KRNAL... </h1>
+        <h2> Desde 2022 </h2>
+        <h3>By namu </h3>
+        <% if(user) {%>
+            <li>Hola <strong><%- user %></strong></li>
+        <% } else { %>
+            <li></li>
+        <% } %>
+        <li><li><a href="/lab18/logout">LogOut</a></li></li>
+    </header>
+    
+    resultados += <div id="resultados">
+        resultados += <section>
+            resultados += <img src="\assets\KRNAL.png" alt="Logo TACOS EL CARNAL" style="width: 15%;">
+            resultados += <h3>Menú </h3>
+
+            resultados += <h3>Tacos grandes </h3>
+            resultados += <p>Todos incluyen nopales y cebollas asadas</p>
+            resultados += <ul>
+                resultados += <li class="item"> Bisteck ........................ $30</li>
+                resultados += <li class="item"> Pastor ........................ $30</li>
+                resultados += <li class="item"> Chorizo ........................ $30</li>
+                resultados += <li class="item"> Asada ........................ $30</li>
+                resultados += <li class="item"> CARNITAS ........................ $30</li>
+                resultados += </ul>
+
+                resultados += <h3>Tacos pequeños </h3>
+                resultados += <p>Todos incluyen verdura</p>
+                resultados += <ul>
+                    resultados += <li class="item"> Bisteck ........................ $15</li>
+                    resultados += <li class="item"> Pastor ........................ $15</li>
+                    resultados += <li class="item"> Chorizo ........................ $15</li>
+                    resultados += <li class="item"> Asada ........................ $15</li>
+                    resultados += <li class="item"> CARNITAS ........................ $15</li>
+                    resultados += </ul>
+
+                    resultados += <h3>ESPECIALES </h3>
+                    resultados += <p>Hazlo combo y agrega refresco por $10 más...</p>
+                    resultados += <dl>
+                        resultados += <dt class="item"> <b>El Labrador.................. $50</b></dt>
+                        resultados += <dd> Mucha cebolla caramelizada, bisteck y papa asada </dd>
+                        resultados += <dt class="item"> <b> Pastor alemán............ $50</b></dt>
+                        resultados += <dd> Pastor con chorizo, piña y chile guero asado </dd>
+                        resultados += <dt class="item"> <b>El Pug................................. $50</b></dt>
+                        resultados += <dd> Carnitas, chorizo, cebolla caramelizada y morron </dd>
+                        resultados += <dt class="item"> <b>Perron................................ $50</b></dt>
+                        resultados += <dd> Asada, chorizo, extra queso, chile guero, papa y nopales  </dd>
+                        resultados += </dl>
+                        resultados += </section>
+
+                        resultados += <section>
+                            resultados += <h2>Ubicación </h2>
+                            resultados += <h3>Sucursales</h3>
+                            resultados += <table>
+                                resultados += <tr>
+                                    resultados += <th>Nombre</th>
+                                    resultados += <th>Ubicacióm</th>
+                                    resultados += <th>Horarios</th>
+                                    resultados += </tr>
+                                    resultados += <tr>
+                                        resultados += <td>Centro</td>
+                                        resultados += <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                        resultados += <td>L - D (24 hrs)</td>
+                        resultados += </tr>
+                        resultados += <tr>
+                            resultados += <td>Sur</td>
+                            resultados += <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                        resultados += <td>L - V (8 am - 11 pm)</td>
+                        resultados += </tr>
+                        resultados += <tr>
+                            resultados += <td>Norte</td>
+                            resultados += <td><a href="https://goo.gl/maps/u6CniAqj9HBXdpDv9" target="_blank">Blvd. Bernardo Quintana 4113, San
+                        Pablo Tecnologico, 76160 Santiago de Querétaro, Qro.</a></td>
+                        resultados += <td>L - D (24 hrs)</td>
+                        resultados += </tr>
+                        resultados += </table>
+                        resultados += </section>
+                        resultados += </div>
+
+    <hr>
+
+    <section>
+        <button
+            onclick="window.location.href = 'https://www.facebook.com/Tacos-El-Carnal-100000000000000';" class="fb">Facebook</button>
+        <br>
+        <br>
+        <a href="/Lab18/ordenar">
+            <button class="button">Pedir</button>
+        </a>
+
+    <hr>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7528451518949005"
+     crossorigin="anonymous"></script>
+<!-- nose -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7528451518949005"
+     data-ad-slot="5103399621"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</body>
+
+
+</html>

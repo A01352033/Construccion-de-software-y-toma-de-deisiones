@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 13</title>
-</head>
-
-<body>
-    <%- include('add/style.ejs') %>
+<%- include('add/header.ejs') %>
 
     <header>
         <h1>Tacos EL KRNAL... </h1>
@@ -17,12 +6,14 @@
         <h3>By namu </h3>
         <% if(user) {%>
             <li>Hola <strong><%- user %></strong></li>
-        <% } else { %>
-            <li></li>
-        <% } %>
-        <li><li><a href="/lab14/logout">LogOut</a></li></li>
+            <% } else { %>
+                <li></li>
+                <% } %>
+                    <li>
+                    <li><a href="/tacos/logout">LogOut</a></li>
+                    </li>
     </header>
-    
+
     <section>
         <img src="\assets\KRNAL.png" alt="Logo TACOS EL CARNAL" style="width: 15%;">
         <h3>Menú </h3>
@@ -57,7 +48,7 @@
             <dt class="item"> <b>El Pug................................. $50</b></dt>
             <dd> Carnitas, chorizo, cebolla caramelizada y morron </dd>
             <dt class="item"> <b>Perron................................ $50</b></dt>
-            <dd> Asada, chorizo, extra queso, chile guero, papa y nopales  </dd>
+            <dd> Asada, chorizo, extra queso, chile guero, papa y nopales </dd>
         </dl>
     </section>
 
@@ -94,13 +85,14 @@
     <hr>
 
     <section>
-        <button
-            onclick="window.location.href = 'https://www.facebook.com/Tacos-El-Carnal-100000000000000';" class="fb">Facebook</button>
+        <button onclick="window.location.href = 'https://www.facebook.com/Tacos-El-Carnal-100000000000000';"
+            class="fb">Facebook</button>
         <br>
         <br>
-        <a href="/Lab14/ordenar">
+        <a href="/tacos/ordenar">
             <button class="button">Pedir</button>
         </a>
-</body>
 
-</html>
+    </section>
+
+    <%- include('add/footer.ejs') %>
