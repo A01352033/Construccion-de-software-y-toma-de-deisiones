@@ -23,8 +23,8 @@ app.use((request, response, next) => {
     next(); //Pasa al siguiente middleware
 });
 
-const lab14Routes  = require('./routes/lab17.routes');
-app.use('/lab17',lab14Routes );
+const tacosRoutes  = require('./routes/tacos.routes');
+app.use('/tacos',tacosRoutes );
 
 
 app.use((request, response, next) => {

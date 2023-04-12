@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('add/header.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 17</title>
-</head>
-
-<body>
-<%- include('add/style.ejs') %>
-
-    <h1>
-        <%= titulo %>
-    </h1>
-
-    <div class="container">
-        <form action="/lab17/login" method="POST">
+    <div class="box">
+        <form action="/tacos/login" method="POST">
+            <div class="col s6">
+                <img src="\assets\KRNAL.png" alt="Logo TACOS EL CARNAL" style="width: 55%;">
+            </div>
+            <br>
             <div class="input-field col s6">
                 <input id="first_name" type="text" class="validate" name="username">
-                <label for="first_name">Username</label>
+                <label for="first_name" class="login-text">Username</label>
             </div>
             <div class="input-field col s6">
                 <input id="password" type="password" class="validate" name="password">
-                <label for="last_name">Password</label>
+                <label for="last_name" class="login-text">Password</label>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Login
-                <i class="material-icons right">send</i>
+            <button class="submit-button" type="submit" name="action">Eat now ->
             </button>
         </form>
     </div>
-</body>
 
-</html>
+
+    <%- include('add/footer.ejs') %>
