@@ -18,7 +18,7 @@ exports.post_login = (request, response, next) => {
     });
     user_nuevo.save();
     request.session.user = user_nuevo.username;
-    response.status(300).redirect('/lab17/');
+    response.status(300).redirect('/tacos/');
 };
 
 exports.get_index = (request, response, next) => {
@@ -28,7 +28,7 @@ exports.get_index = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -39,7 +39,7 @@ exports.get_preguntas = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -50,7 +50,7 @@ exports.get_ordenar = (request, response, next) => {
             user: request.session.user || '',
         });
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -71,9 +71,9 @@ exports.post_ordenar = (request, response, next) => {
         direccion: request.body.Direccion,
     });
     norden.save(id);
-    response.status(300).redirect('/Lab17/pedido');
+    response.status(300).redirect('/tacos/pedido');
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -89,7 +89,7 @@ exports.get_pedido = (request, response, next) => {
             });
         }).catch(err => console.log(err));
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -106,7 +106,7 @@ exports.get_modificar = (request, response, next) => {
             });
         }).catch(err => console.log(err));
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };
 
@@ -127,8 +127,8 @@ exports.post_modificar = (request, response, next) => {
             direccion: request.body.Direccion,
         });
         norden.save(id);
-        response.status(300).redirect('/lab17/pedido');
+        response.status(300).redirect('/tacos/pedido');
     } else {
-        response.redirect('/lab17/login');
+        response.redirect('/tacos/login');
     }
 };

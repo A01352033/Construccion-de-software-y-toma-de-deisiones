@@ -1,6 +1,6 @@
 const db = require('../util/db');
 
-/* const ordenes = [
+/* const pedidos = [
     {
         bisteck: '0',
         pastor: '0',
