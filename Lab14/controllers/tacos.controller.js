@@ -68,6 +68,8 @@ exports.post_ordenar = (request, response, next) => {
         carnitas: request.body.CarnitasNumber,
         nombre: request.body.Nombre,
         direccion: request.body.Direccion,
+        users: user.fetchAll(),
+        user: request.session.user || '',
     });
     norden.save();
     response.status(300).redirect('/tacos/pedido');
