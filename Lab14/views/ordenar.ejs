@@ -7,10 +7,11 @@
     <section>
         <form action="/tacos/ordenar" method="POST">
             <p>De qué taquería quieres?</p>
-            <select>
-                <option value="Norte" for="Sucursal">Norte</option>
-                <option value="Centro" for="Sucursal">Centro</option>
-                <option value="Sur" for="Sucursal">Sur</option>
+            <select id="Sucursal" >
+                <option value="" selected disabled>Seleccione una sucursal</option>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
             </select>
             <br>
             <br>
@@ -72,12 +73,18 @@
     </a>
     <script>
         function mostrarInput() {
-            var inputContainer = document.getElementById("input");
-            var checkbox = document.getElementById("checkbox");
-            if (checkbox.checked) {
-                inputContainer.style.display = "block";
-            } else {
-                inputContainer.style.display = "none";
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var inputs = document.querySelectorAll('input[type="number"]');
+            
+            for (var i = 0; i < checkboxes.length; i++) {
+                var checkbox = checkboxes[i];
+                var input = inputs[i];
+                
+                if (checkbox.checked) {
+                    input.style.display = "block";
+                } else {
+                    input.style.display = "none";
+                }
             }
         }
     </script>

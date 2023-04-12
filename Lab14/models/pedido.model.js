@@ -1,14 +1,16 @@
-const ordenes = [
-    {
+const pedidos = [
+    /* {
+        sucursal: '',
         bisteck: '0',
         pastor: '0',
         chorizo: '0',
         asada: '0',
         carnitas: '0',
-        nombre: 'Manuel Villalpando',
-        direccion: 'Jesus Oviedo',
+        nombre: '',
+        direccion: '',
     },
     {
+        sucursal: 'Norte',
         bisteck: '1',
         pastor: '1',
         chorizo: '1',
@@ -16,13 +18,14 @@ const ordenes = [
         carnitas: '1',
         nombre: 'Sergio Corona',
         direccion: 'Jesus Oviedo, Geminis - 2',
-    },
+    }, */
 ];
 
 module.exports = class Orden {
 
     //Constructor de la clase. Sirve para crear un nuevo objeto, y en él se definen las propiedades del modelo
     constructor(pedido) {
+        this.sucursal = pedido.sucursal || '';
         this.bisteck = pedido.bisteck || '';
         this.pastor = pedido.pastor || '';
         this.chorizo = pedido.chorizo || '';
@@ -34,12 +37,12 @@ module.exports = class Orden {
 
     //Este método servirá para guardar de manera persistente el nuevo objeto. 
     save() {
-        ordenes.push(this);
+        pedidos.push(this);
     }
 
     //Este método servirá para devolver los objetos del almacenamiento persistente.
     static fetchAll() {
-        return ordenes;
+        return pedidos;
     }
 
 }

@@ -1,47 +1,54 @@
 <%- include('add/header.ejs') %>
 
 
-    <header style="margin-top: 5%;">
+
+    <header style="margin-top: 1%;">
         <h1>Tacos EL CARNAL...</h1>
         <h2> Desde 2022</h2>
-        <img src="Tacos EL CARNAL.png" alt="Logo TACOS EL CARNAL">
-    </header>
+        <img src="\assets\KRNAL.png" alt="Logo TACOS EL CARNAL" style="width: 15%;">
 
     <section>
+        <% if (ordenes.length> 0) { %>
 
-        <nav>
-            <div id="orden"></div>
-        </nav>
-        <main>
-            <div>
-                <span>
-                    <%= titulo %>
-                </span>
-                <ul>
-                    <li><strong>Bisteck: </strong>
-                        <%= orden.bisteck %>
-                    </li>
-                    <li><strong>Pastor: </strong>
-                        <%= orden.pastor %>
-                    </li>
-                    <li><strong>Chorizo: </strong>
-                        <%= orden.chorizo %>
-                    </li>
-                    <li><strong>Asada: </strong>
-                        <%= orden.asada %>
-                    </li>
-                    <li><strong>Carnitas: </strong>
-                        <%= orden.carnitas %>
-                    </li>
-                    <li><strong>Nombre: </strong>
-                        <%= orden.nombre %>
-                    </li>
-                    <li><strong>Direccion: </strong>
-                        <%= orden.direccion %>
-                    </li>
-                </ul>
-            </div>
-        </main>
+            <% for (let orden of ordenes) { %>
+
+                <nav>
+                    <div id="orden"></div>
+                </nav>
+                <main>
+                    <div class="container">
+                        <ul>
+                            <li><strong>Sucursal: </strong>
+                                <%= orden.sucursal %>
+                            </li>
+                            <li><strong>Bisteck: </strong>
+                                <%= orden.bisteck %>
+                            </li>
+                            <li><strong>Pastor: </strong>
+                                <%= orden.pastor %>
+                            </li>
+                            <li><strong>Chorizo: </strong>
+                                <%= orden.chorizo %>
+                            </li>
+                            <li><strong>Asada: </strong>
+                                <%= orden.asada %>
+                            </li>
+                            <li><strong>Carnitas: </strong>
+                                <%= orden.carnitas %>
+                            </li>
+                            <li><strong>Nombre: </strong>
+                                <%= orden.nombre %>
+                            </li>
+                            <li><strong>Direccion: </strong>
+                                <%= orden.direccion %>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            <% } %>
+        <% } else { %>
+            <p>Aún no hay pedidos...</p>
+        <% } %>
 
         <a href="/tacos">
             <button class="button">Menú</button>

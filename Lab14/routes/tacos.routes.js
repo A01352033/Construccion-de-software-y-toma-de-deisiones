@@ -6,7 +6,7 @@ const userController = require('../controllers/usuarios.controller');
 
 router.get('/', tacosController.get_index);
 
-// router.get('/preguntas', lab14Controller.get_preguntas);
+// router.get('/preguntas', tacosController.get_preguntas);
 
 router.get('/ordenar', tacosController.get_ordenar);
 

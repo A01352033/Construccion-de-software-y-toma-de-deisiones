@@ -61,6 +61,7 @@ exports.post_ordenar = (request, response, next) => {
         p: request.body.Pastor,
         ch: request.body.Chorizo,
         a: request.body.Asada,
+        sucursal: request.body.Sucursal,
         bisteck: request.body.BisteckNumber,
         pastor: request.body.PastorNumber,
         chorizo: request.body.ChorizoNumber,
