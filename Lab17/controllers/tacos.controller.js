@@ -58,10 +58,6 @@ exports.post_ordenar = (request, response, next) => {
     const id = request.params.id || 0;
     if (request.session.user) {
     const norden = new orden({
-        b: request.body.Bisteck,
-        p: request.body.Pastor,
-        ch: request.body.Chorizo,
-        a: request.body.Asada,
         bisteck: request.body.BisteckNumber,
         pastor: request.body.PastorNumber,
         chorizo: request.body.ChorizoNumber,
@@ -69,6 +65,7 @@ exports.post_ordenar = (request, response, next) => {
         carnitas: request.body.CarnitasNumber,
         nombre: request.body.Nombre,
         direccion: request.body.Direccion,
+        user: request.session.user || '',
     });
     norden.save(id);
     response.status(300).redirect('/tacos/pedido');
@@ -114,10 +111,6 @@ exports.post_modificar = (request, response, next) => {
     const id = request.params.id || 0;
     if (request.session.user) {
         const norden = new orden({
-            b: request.body.Bisteck,
-            p: request.body.Pastor,
-            ch: request.body.Chorizo,
-            a: request.body.Asada,
             bisteck: request.body.BisteckNumber,
             pastor: request.body.PastorNumber,
             chorizo: request.body.ChorizoNumber,
@@ -125,6 +118,7 @@ exports.post_modificar = (request, response, next) => {
             carnitas: request.body.CarnitasNumber,
             nombre: request.body.Nombre,
             direccion: request.body.Direccion,
+            user: request.session.user || '',
         });
         norden.save(id);
         response.status(300).redirect('/tacos/pedido');
